@@ -14,7 +14,7 @@ def fetch_apod(api_key):
     return response.json()
 
 def main():
-    st.set_page_config(page_title="NASA APOD Viewer(Practice D28)", layout="centered")
+    st.set_page_config(page_title="NASA APOD Viewer(Incrk)", layout="centered")
     st.title("🌌 NASA Astronomy Picture of the Day (APOD)")
 
     try:
