@@ -13,7 +13,7 @@ def fetch_apod(api_key):
     response.raise_for_status()
     return response.json()
 
-def main()
+def main():
     st.set_page_config(page_title="NASA APOD Viewer(Practice D28)", layout="centered")
     st.title("🌌 NASA Astronomy Picture of the Day (APOD)")
 
@@ -28,7 +28,7 @@ def main()
         st.subheader(f"{date}:{title}")
 
         if media_type == "image":
-            st.image(url, use_column_width=True, caption=title)
+            st.image(url, use_container_width=True, caption=title)
         elif media_type == "video":
             st.video(url)
         else:
